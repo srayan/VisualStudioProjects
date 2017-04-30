@@ -10,9 +10,13 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hey there World!");
-            Console.WriteLine("Just checking again");
-            Console.WriteLine("Just kidding with you!");
+            int iNum = 0;
+            while (iNum <=5)
+            {
+                Console.WriteLine("Hey there World!");
+                iNum += 1;
+            }
+
         }
     }
 }
