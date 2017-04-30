@@ -19,7 +19,7 @@ namespace Evolution
                 //Pass the txt file with email addresses that spam you
                 EmailHandlerModule.EmailHandler();
             }
-
+            Console.ReadLine();
         }
     }
 }
