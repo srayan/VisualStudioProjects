@@ -7,8 +7,8 @@
     <ProjectGuid>{784D08B3-E3D8-472C-BF03-A9E4BB1D0E2E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloWorld</RootNamespace>
-    <AssemblyName>HelloWorld</AssemblyName>
+    <RootNamespace>SpammerPunisher</RootNamespace>
+    <AssemblyName>SpammerPunisher</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
