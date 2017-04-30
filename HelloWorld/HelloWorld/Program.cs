@@ -14,7 +14,10 @@ namespace Evolution
     {
         static void Main(string[] args)
         {
-            EmailHandlerModule.EmailHandler();
+            for (int iNum=0;iNum<10;iNum++)
+            {
+                EmailHandlerModule.EmailHandler();
+            }
 
             //Console.ReadLine();
         }
