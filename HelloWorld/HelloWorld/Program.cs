@@ -20,7 +20,6 @@ namespace Evolution
                 EmailHandlerModule.EmailHandler();
             }
 
-            //Console.ReadLine();
         }
     }
 }
