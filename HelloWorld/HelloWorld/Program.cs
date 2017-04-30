@@ -3,21 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Mail;
 
-namespace HelloWorld
+//Look into publishing this as an Azure Web Job. Lower costs.
+
+namespace Evolution
 {
+    using EmailHandlerModule;
     class Program
     {
         static void Main(string[] args)
         {
-            int iNum = 0;
-            while (iNum <=5)
-            {
-                Console.WriteLine("Hey there World!");
-                Console.WriteLine("This is a fun way to add code and sync into my GitHuB. Since my local Git repo is on OneDrive so I can sync there too!");
-                iNum += 1;
-            }
-            Console.ReadLine();
+            EmailHandlerModule.EmailHandler();
+
+            //Console.ReadLine();
         }
     }
 }
