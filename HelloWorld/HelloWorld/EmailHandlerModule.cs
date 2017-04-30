@@ -19,6 +19,7 @@ namespace EmailHandlerModule
             client.Timeout = 10000;
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.UseDefaultCredentials = false;
+            //Save the credentials in a remote encrypted file.
             client.Credentials = new System.Net.NetworkCredential("yodeler999@gmail.com", "bhalobasha7425!");
 
             MailMessage mm = new MailMessage("yodeler999@gmail.com", "finservb88@luckysouk.com", "You need to stop Spamming me!!", "I am tired of your emails. Stop spamming!");

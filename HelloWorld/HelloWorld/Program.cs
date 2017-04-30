@@ -16,6 +16,7 @@ namespace Evolution
         {
             for (int iNum=0;iNum<10;iNum++)
             {
+                //Pass the txt file with email addresses that spam you
                 EmailHandlerModule.EmailHandler();
             }
 
