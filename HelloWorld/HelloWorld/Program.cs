@@ -16,7 +16,7 @@ namespace HelloWorld
                 Console.WriteLine("Hey there World!");
                 iNum += 1;
             }
-
+            Console.ReadLine();
         }
     }
 }
