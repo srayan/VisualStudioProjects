@@ -14,6 +14,7 @@ namespace HelloWorld
             while (iNum <=5)
             {
                 Console.WriteLine("Hey there World!");
+                Console.WriteLine("This is a fun way to add code and sync into my GitHuB. Since my local Git repo is on OneDrive so I can sync there too!");
                 iNum += 1;
             }
             Console.ReadLine();
