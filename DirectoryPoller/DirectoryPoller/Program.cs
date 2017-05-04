@@ -35,9 +35,9 @@ public class Watcher
         /* Watch for changes in LastAccess and LastWrite times, and
            the renaming of files or directories. */
         watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite
-           | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-        // Only watch text files.
-        watcher.Filter = "*.txt";
+           | NotifyFilters.FileName | NotifyFilters.DirectoryName |NotifyFilters.CreationTime | NotifyFilters.Size;
+        // Watch all types of files.
+        watcher.Filter = "*.*";
 
         // Add event handlers.
         watcher.Changed += new FileSystemEventHandler(OnChanged);
@@ -50,6 +50,7 @@ public class Watcher
 
         // Wait for the user to quit the program.
         Console.WriteLine("Press \'q\' to quit the sample.");
+        Console.WriteLine(args.Length);
         while (Console.Read() != 'q') ;
     }
 
