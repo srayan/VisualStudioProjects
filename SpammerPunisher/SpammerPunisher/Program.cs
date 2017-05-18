@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Net.Mail;
 
@@ -14,12 +15,13 @@ namespace Evolution
     {
         static void Main(string[] args)
         {
-            for (int iNum=0;iNum<10;iNum++)
+            for (int iNum=0;iNum<50;iNum++)
             {
                 //Pass the txt file with email addresses that spam you
                 EmailHandlerModule.EmailHandler();
+                Thread.Sleep(3000);
             }
-            Console.ReadLine();
+            
         }
     }
 }
